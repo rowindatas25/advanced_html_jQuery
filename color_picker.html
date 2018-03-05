@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Picker</title>
+	<style>
+		p {
+			font-size: 25px;
+			width: 300px;
+			text-align: center;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+				$("#colorpicker").change(function () {
+					 $("p").css("color", $("#colorpicker").prop("value"));
+				});
+		});
+	</script>
+</head>
+<body>
+	<label for="colorpicker">Choose Color:</label>
+	<input type="color" id="colorpicker"/> 
+	<p>This is the example text for your viewing pleasure</p>
+</body>
+</html>
