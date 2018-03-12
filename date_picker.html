@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Date Time Picker</title>
+	<style>
+		fieldset  {
+			width: 300px;
+			margin: 0 auto;
+		}
+		#result {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="result"></div>
+	<fieldset>
+		<legend>Date Time Picker</legend>
+		<p><label>Date of Birth: </label><input type="date" id="dob" min="1990-01-01" max="2018-12-31"></p>
+		<p><label>Time of Travel: </label><input type="time" id="clock"></p>
+		<p><label>Date and Time of Travel:</label><input type="datetime-local" id="dateTime"></p>
+		<p><label>Month of Travel: </label><input type="month" id="dom" value="1999-01"></p>
+		<p><label>Week of Preference: </label><input type="week" id="myWeek"></p>
+	</fieldset>
+	<script src="date_picker.js"></script>
+</body>
+</html>
