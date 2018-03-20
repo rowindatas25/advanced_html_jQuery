@@ -1,0 +1,33 @@
+#container {
+	width: 500px;
+	margin: 0 auto;
+	border: solid red 1px;
+	color: #ffffff;
+	text-align: center;
+}
+
+body {
+	background: #000000;
+}
+
+summary:hover {
+	background-color: black;
+}
+
+summary {
+	font-size: 30px;
+	background: red;
+	outline: none;
+	cursor: pointer;
+	border: 1px ridge black;
+	border-bottom: none;
+}
+
+section {
+	font-size: 25px;
+	background: blue;
+	padding: 10px;
+	border-right: 1px ridge black;
+	border-left: 1px ridge black;
+	border-top: 1px ridge black;
+}
