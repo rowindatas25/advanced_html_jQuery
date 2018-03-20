@@ -1,0 +1,16 @@
+input:invalid {
+	border-color: red;
+	border-radius: 10px;
+}
+
+input:valid {
+	border-color: blue;
+	border-radius: 7px;
+}
+
+body {
+	background: black;
+	color: white;
+	text-align: center;
+	margin-top: 200px;
+}

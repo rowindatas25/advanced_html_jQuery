@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Patterns</title>
+	<link rel="stylesheet" href="patterns.css">
+</head>
+<body>
+	<form>
+		<label for="uName"><b>Choose Your Username</b></label><br>
+		<input type="text" id="uname" name="Username" placeholder="Letters Only" pattern="[a-zA-Z]{5,15}" title="Letters only, minimun length:5 and maximun length:15" /><br>
+		<br>
+		<label for="zip"><b>Enter Your Zip Code</b><br></label>
+		<input type="text" id="zip" name="ZipCode" placeholder="Zip Code" pattern="[0-9]{5}" title="Numbers only, must be five digits">
+		<br>
+		<br>
+		<button type="submit">Submit</button>
+	</form>
+
+	<script src="patterns.js"></script>
+</body>
+</html>
