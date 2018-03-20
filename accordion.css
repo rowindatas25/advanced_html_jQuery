@@ -23,6 +23,22 @@ summary {
 	border-bottom: none;
 }
 
+summary::-webkit-details-marker {
+	display: none;
+}
+
+summary:before {
+	 content: "+";
+	 color: white;
+	 background: red;
+	 font-weight: bold;
+	 width: 20px;
+	 float: left;
+	 text-align: center;
+	 border-radius: 3px;
+	 line-height: 30px;
+}
+
 section {
 	font-size: 25px;
 	background: blue;
@@ -31,3 +47,17 @@ section {
 	border-left: 1px ridge black;
 	border-top: 1px ridge black;
 }
+
+
+details[open] summary::before {
+		content: "-";
+}
+
+p {
+	font-size: 20px;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+
+
