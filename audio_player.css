@@ -8,7 +8,7 @@ body {
 	width: 700px;
 	margin: 0 auto;
 	border: 1px solid white;
-
+	border-radius: 5px;
 }
 
 h1 {
@@ -26,9 +26,55 @@ audio {
 	text-align: center;
 }
 
+#currentAction {
+	float: left;
+	padding: 10px;
+	margin-left: 15px;
+}
+
+#title {
+	padding: 10px;
+	float: right;
+	margin-right: 20px;
+}
+
 a {
 	font-size: 40px;
 	cursor: pointer;
 	text-decoration: none;
 	color: white;
+}
+
+ul {
+	list-style: none;
+}
+
+#songList li {
+	cursor: pointer;
+	padding: 10px;
+}
+
+#songList li:hover {
+	background-color: gray;
+}
+
+.songItem {
+	position: relative;
+}
+
+.songTitle {
+	position: absolute;
+	top: 0;
+	left: 70px;
+
+}
+
+.songNum {
+	padding-left: 5px;
+}
+
+.songLen {
+	position: absolute;
+	top: 0;
+	right: 40px;
 }
