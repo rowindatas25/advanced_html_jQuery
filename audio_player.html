@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio Player</title>
+	<link rel="stylesheet" href="audio_player.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>Tas'Audio Player</h1>
+		<div id="songs">
+			<span id="currentAction"></span>
+			<span id="title"></span>
+			<audio controls id="player"></audio>
+			<div id="buttons">
+				<a href="" id="prev">&laquo;</a>
+				<a href="" id="next">&raquo;</a>
+			</div>
+			<div id="songItems">
+				<ul id="songList"></ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="audio_player.js"></script>
+</html>
