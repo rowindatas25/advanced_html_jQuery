@@ -2,6 +2,7 @@ body {
 	background: black;
 	color: white;
 	font-size: 25px;
+	
 }
 
 #container {
@@ -17,7 +18,7 @@ h1 {
 }
 
 audio {
-	width: 670px;
+	width: 750px;
 	margin: 0px 15px 0px 15px;
 	
 }

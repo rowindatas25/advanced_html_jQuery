@@ -1,6 +1,6 @@
 $(document).ready(function() {
-		const filePath = "https://archive.org/details/Best100InstrumentalSongs/"
-		const songDetails = [{
+		var filePath = "http://archive.org/details/Best100InstrumentalSongs/"
+		var songDetails = [{
 				"number" : "1",
 				"name" : "Blue Star",
 				"duration" : "02:14",
@@ -64,5 +64,59 @@ $(document).ready(function() {
 		}];
 		$.each(songDetails, function(key, value) {
 				$("#songList").append("<li><div class='songItem'><div class='songNum'>"+ value.number +".</div><div class='songTitle'>"+ value.name + "</div><div class='songLen'>"+ value.duration +"</div></div></li>");
+		});
+		var playingSongNo = 0;
+		var totalSongs = songDetails.length;
+		var audio = $("#player").get(0);
+		$("#player").on("play", function() {
+			$("#currentAction").text("Now Playing");
+		}).on("pause", function () {
+			$("#currentAction").text("Paused");
 		})
+		$("#songList li").click(function() {
+				playingSongNo = $(this).index();
+				playSong(playingSongNo);
+		});
+		$("#prev").click(function () {
+			if (playingSongNo == 0) {
+				playingSongNo = totalSongs - 1;
+				playSong(playingSongNo);
+			}
+			else {
+				playingSongNo--;
+				playSong(playingSongNo);
+			}
+		});
+		$("#next").click(function () {
+			if (playingSongNo + 1 == totalSongs) {
+				playingSongNo = 0;
+				playSong(playingSongNo);
+			}
+			else {
+				playingSongNo++;
+				playSong(playingSongNo);
+			}
+		})
+			function playSong(songNo) {
+				$("#songTitle").text(songDetails[songNo].name);
+				audio.src = filePath + songDetails[songNo].file;
+				audio.play();
+			}
+			playSong(playingSongNo);
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
