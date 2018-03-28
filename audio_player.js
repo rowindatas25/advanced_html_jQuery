@@ -72,7 +72,9 @@ $(document).ready(function() {
 			$("#currentAction").text("Now Playing");
 		}).on("pause", function () {
 			$("#currentAction").text("Paused");
-		})
+		}).on("ended". function () {
+			$("#currentAction").text("Ended");
+		});
 		$("#songList li").click(function() {
 				playingSongNo = $(this).index();
 				playSong(playingSongNo);

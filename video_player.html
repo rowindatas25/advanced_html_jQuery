@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video Speed Player</title>
+	<link rel="stylesheet" href="video_player.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>Video Speed Player</h1>
+		<video autoplay="true" id="player" loop="true" width="600" height="400">
+			<source src="Joe.mp4" type="video/mp4" />
+		</video>
+		<div id="speed">
+			<label for="slider"> - Speed +</label>
+			<br>
+			<input type="range" id="slider" min="0" max="2" value="1" step=".1" />
+			<div id="info"></div>
+		</div>
+	</div>
+</body>
+<script src="video_player.js"></script>
+</html>
