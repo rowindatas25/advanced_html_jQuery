@@ -1,0 +1,40 @@
+#container {
+	width: 700px;
+	height: 600px;
+	background-color: orange;
+	border: 3px solid white;
+	border-radius: 7px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	color: maroon;
+}
+
+body {
+	background-color: maroon;
+}
+
+button {
+	border-radius: 10px;
+	font-size: 25px;
+	color: maroon;
+	border: 2px solid white;
+	background-color: lightgray;
+	margin: 20px;
+
+}
+
+#result {
+	font-size: 25px;
+	color: maroon;
+}
+
+#myCanvas {
+	border: 2px solid white;
+	outline: none;
+	border-radius: 5px;
+
+	
+}
