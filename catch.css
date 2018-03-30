@@ -23,7 +23,7 @@ button {
 	border: 2px solid white;
 	background-color: lightgray;
 	margin: 20px;
-
+	outline: none;
 }
 
 #result {
@@ -31,10 +31,13 @@ button {
 	color: maroon;
 }
 
+canvas {
+	margin: 0 auto;
+}
+
 #myCanvas {
 	border: 2px solid white;
 	outline: none;
 	border-radius: 5px;
 
-	
 }
